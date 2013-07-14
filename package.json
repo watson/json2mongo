@@ -1,0 +1,22 @@
+{
+  "name": "json2mongo",
+  "version": "0.1.0",
+  "description": "A MongoDB Extended JSON conversion utility which converts Strict Mode syntax to JavaScript Mode",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/watson/json2mongo.git"
+  },
+  "keywords": [
+    "mongodb",
+    "json"
+  ],
+  "author": "Thomas Watson <w@tson.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watson/json2mongo/issues"
+  }
+}
