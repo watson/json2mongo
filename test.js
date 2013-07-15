@@ -6,6 +6,10 @@ var query = {
   foo: { $undefined: true },
   bar: { $regex: '[0-9]' },
   baz: { $regex: '[a-z]', $options: 'i' },
+  $and: [
+    { foo: { $undefined: true } },
+    { bar: { $undefined: true } }
+  ],
   bool: true,
   obj: { foo: 123 },
   string: 'foo'
@@ -16,6 +20,10 @@ var result = {
   foo: undefined,
   bar: /[0-9]/,
   baz: /[a-z]/i,
+  $and: [
+    { foo: undefined },
+    { bar: undefined }
+  ],
   bool: true,
   obj: { foo: 123 },
   string: 'foo'

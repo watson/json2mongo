@@ -13,7 +13,7 @@ module.exports = function (query) {
     case '$undefined':
       return undefined;
     }
-    if (typeof val === 'object' && !Array.isArray(val))
+    if (typeof val === 'object')
       query[key] = module.exports(val);
   }
   return query;
