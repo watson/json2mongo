@@ -16,7 +16,7 @@ var query = {
 };
 
 json2mongo(query); // {
-                   //   created: new Date('2013-12-01T00:00:00.000Z'),
+                   //   created: new Date('2013-01-01T00:00:00.000Z'),
                    //   foo: undefined,
                    //   bar: /[0-9]/,
                    //   baz: /[a-z]/i
