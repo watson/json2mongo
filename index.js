@@ -1,5 +1,7 @@
 'use strict';
 
+var ObjectID = require('mongodb').ObjectID;
+
 module.exports = function (query) {
   var key, val;
   for (key in query) {
@@ -12,6 +14,8 @@ module.exports = function (query) {
       return new RegExp(val, query.$options);
     case '$undefined':
       return undefined;
+    case '$oid':
+      return new ObjectID(val);
     }
     if (typeof val === 'object')
       query[key] = module.exports(val);

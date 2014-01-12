@@ -1,7 +1,9 @@
 var assert = require('assert');
 var json2mongo = require('./index');
+var ObjectID = require('mongodb').ObjectID;
 
 var query = {
+  _id: { $oid: '529dcfe56939cd00000cedc9' },
   created: { $date: '2013-01-01T00:00:00.000Z' },
   foo: { $undefined: true },
   bar: { $regex: '[0-9]' },
@@ -16,6 +18,7 @@ var query = {
 };
 
 var result = {
+  _id: new ObjectID('529dcfe56939cd00000cedc9'),
   created: new Date('2013-01-01T00:00:00.000Z'),
   foo: undefined,
   bar: /[0-9]/,

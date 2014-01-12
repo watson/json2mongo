@@ -18,5 +18,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/watson/json2mongo/issues"
+  },
+  "dependencies": {
+    "mongodb": "1.3.23"
   }
 }
