@@ -1,5 +1,7 @@
+'use strict';
+
 var assert = require('assert');
-var json2mongo = require('./index');
+var json2mongo = require('./');
 
 var query = {
   created: { $date: '2013-01-01T00:00:00.000Z' },
