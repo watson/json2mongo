@@ -11,10 +11,13 @@
     "url": "git://github.com/watson/json2mongo.git"
   },
   "keywords": [
+    "mongo",
     "mongodb",
-    "json"
+    "json",
+    "convert",
+    "transform"
   ],
-  "author": "Thomas Watson <w@tson.dk>",
+  "author": "Thomas Watson Steen <w@tson.dk>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/watson/json2mongo/issues"
