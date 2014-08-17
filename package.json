@@ -1,6 +1,6 @@
 {
   "name": "json2mongo",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "A MongoDB Extended JSON conversion utility which converts Strict Mode syntax to JavaScript Mode",
   "main": "index.js",
   "browser": "browser.js",
