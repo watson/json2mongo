@@ -3,6 +3,8 @@
 This is a [MongoDB Extended JSON](http://docs.mongodb.org/manual/reference/mongodb-extended-json/)
 convertion utility which converts Strict Mode syntax to JavaScript Mode.
 
+[![Build Status](https://travis-ci.org/watson/json2mongo.png)](https://travis-ci.org/watson/json2mongo)
+
 ## Example usage
 
 ```javascript
