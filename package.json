@@ -24,6 +24,6 @@
     "url": "https://github.com/watson/json2mongo/issues"
   },
   "dependencies": {
-    "mongodb": "^1.4.8"
+    "mongodb": "^1.4.0"
   }
 }
