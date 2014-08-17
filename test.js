@@ -1,9 +1,11 @@
 'use strict';
 
+var mongo = require('mongodb');
 var assert = require('assert');
 var json2mongo = require('./');
 
 var query = {
+  _id: { $oid: '123456789012345678901234' },
   created: { $date: '2013-01-01T00:00:00.000Z' },
   foo: { $undefined: true },
   bar: { $regex: '[0-9]' },
@@ -18,6 +20,7 @@ var query = {
 };
 
 var result = {
+  _id: mongo.ObjectID(query._id.$oid),
   created: new Date('2013-01-01T00:00:00.000Z'),
   foo: undefined,
   bar: /[0-9]/,
