@@ -4,6 +4,7 @@ This is a [MongoDB Extended JSON](http://docs.mongodb.org/manual/reference/mongo
 convertion utility which converts Strict Mode syntax to JavaScript Mode.
 
 [![Build status](https://travis-ci.org/watson/json2mongo.svg?branch=master)](https://travis-ci.org/watson/json2mongo)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 ## Example usage
 
