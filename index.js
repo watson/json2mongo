@@ -23,8 +23,9 @@ module.exports = function (obj) {
         return new mongo.ObjectID(val)
       case '$ref':
       case '$id':
-        // TODO: Does this follow the mongo.DBRef interface?
-        return new mongo.DBRef(obj.$ref, obj.$id)
+      case '$db':
+        var id = obj.$id._bsontype ? obj.$id : mongo.ObjectID(obj.$id.$oid)
+        return new mongo.DBRef(obj.$ref, id, obj.$db)
       case '$undefined':
         return undefined
       case '$minKey':
