@@ -10,7 +10,6 @@ module.exports = function (obj) {
     switch (key) {
       case '$binary':
       case '$type':
-        // TODO: Will this behave if $type isn't set?
         return new mongo.Binary(obj.$binary, obj.$type)
       case '$date':
         return new Date(val)
