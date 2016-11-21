@@ -18,7 +18,7 @@
     "convert",
     "transform"
   ],
-  "author": "Thomas Watson Steen <w@tson.dk>",
+  "author": "Thomas Watson Steen <w@tson.dk> (https://twitter.com/wa7son)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/watson/json2mongo/issues"
@@ -28,5 +28,6 @@
   },
   "devDependencies": {
     "standard": "^8.5.0"
-  }
+  },
+  "homepage": "https://github.com/watson/json2mongo#readme"
 }
