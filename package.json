@@ -5,7 +5,7 @@
   "main": "index.js",
   "browser": "browser.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "standard && node test.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
   },
   "dependencies": {
     "mongodb": "^2.2.11"
+  },
+  "devDependencies": {
+    "standard": "^8.5.0"
   }
 }
