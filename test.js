@@ -1,8 +1,8 @@
-'use strict';
+'use strict'
 
-var mongo = require('mongodb');
-var assert = require('assert');
-var json2mongo = require('./');
+var mongo = require('mongodb')
+var assert = require('assert')
+var json2mongo = require('./')
 
 var query = {
   _id: { $oid: '123456789012345678901234' },
@@ -17,7 +17,7 @@ var query = {
   bool: true,
   obj: { foo: 123 },
   string: 'foo'
-};
+}
 
 var result = {
   _id: mongo.ObjectID(query._id.$oid),
@@ -32,6 +32,6 @@ var result = {
   bool: true,
   obj: { foo: 123 },
   string: 'foo'
-};
+}
 
-assert.deepEqual(json2mongo(query), result);
+assert.deepEqual(json2mongo(query), result)
