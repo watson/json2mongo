@@ -35,7 +35,7 @@ var result = {
   binary: mongo.Binary(new Buffer('foo')),
   minKey: mongo.MinKey(),
   maxKey: mongo.MaxKey(),
-  numberLong: mongo.Long('9223372036854775807'),
+  numberLong: mongo.Long.MAX_VALUE,
   foo: undefined,
   bar: /[0-9]/,
   baz: /[a-z]/i,
