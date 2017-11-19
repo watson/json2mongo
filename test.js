@@ -30,7 +30,7 @@ var query = {
 var result = {
   _id: mongo.ObjectID(query._id.$oid),
   created: new Date('2013-01-01T00:00:00.000Z'),
-  decimal: new mongo.Decimal128(Buffer.from('42.42')),
+  decimal: new mongo.Decimal128(new Buffer('42.42')),
   ts: mongo.Timestamp(1412180887, 1),
   fkey1: new mongo.DBRef(query.fkey1.$ref, mongo.ObjectID(query.fkey1.$id.$oid), query.fkey1.$db),
   fkey2: new mongo.DBRef(query.fkey2.$ref, mongo.ObjectID(query.fkey2.$id.$oid)),
