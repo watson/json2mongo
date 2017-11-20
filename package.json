@@ -30,6 +30,9 @@
     "standard": "^10.0.3"
   },
   "homepage": "https://github.com/watson/json2mongo#readme",
+  "engines": {
+    "node": ">=5.10.0"
+  },
   "coordinates": [
     55.777593,
     12.590214
