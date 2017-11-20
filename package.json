@@ -1,6 +1,6 @@
 {
   "name": "json2mongo",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "A MongoDB Extended JSON conversion utility which converts Strict Mode syntax to JavaScript Mode",
   "main": "index.js",
   "browser": "browser.js",
@@ -34,7 +34,7 @@
     "node": ">=5.10.0"
   },
   "coordinates": [
-    55.777593,
-    12.590214
+    55.777582,
+    12.590236
   ]
 }
