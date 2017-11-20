@@ -27,7 +27,7 @@
     "mongodb": "^2.2.11"
   },
   "devDependencies": {
-    "standard": "^8.5.0"
+    "standard": "^10.0.3"
   },
   "homepage": "https://github.com/watson/json2mongo#readme",
   "coordinates": [
