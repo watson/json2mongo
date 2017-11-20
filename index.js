@@ -13,6 +13,8 @@ module.exports = function (obj) {
         return new mongo.Binary(obj.$binary, obj.$type)
       case '$date':
         return new Date(val)
+      case '$decimal128':
+        return new mongo.Decimal128(new Buffer(val))
       case '$timestamp':
         return new mongo.Timestamp(val.t, val.i)
       case '$regex':

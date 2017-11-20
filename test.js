@@ -7,6 +7,7 @@ var json2mongo = require('./')
 var query = {
   _id: { $oid: '123456789012345678901234' },
   created: { $date: '2013-01-01T00:00:00.000Z' },
+  decimal: { $decimal128: '42.42' },
   ts: { $timestamp: { t: 1412180887, i: 1 } },
   fkey1: { $ref: 'creators', $id: { $oid: '123456789012345678901234' }, $db: 'users' },
   fkey2: { $ref: 'creators', $id: { $oid: '123456789012345678901234' } },
@@ -29,6 +30,7 @@ var query = {
 var result = {
   _id: mongo.ObjectID(query._id.$oid),
   created: new Date('2013-01-01T00:00:00.000Z'),
+  decimal: new mongo.Decimal128(new Buffer('42.42')),
   ts: mongo.Timestamp(1412180887, 1),
   fkey1: new mongo.DBRef(query.fkey1.$ref, mongo.ObjectID(query.fkey1.$id.$oid), query.fkey1.$db),
   fkey2: new mongo.DBRef(query.fkey2.$ref, mongo.ObjectID(query.fkey2.$id.$oid)),
