@@ -34,7 +34,11 @@ module.exports = function (obj) {
       case '$maxKey':
         return new mongo.MaxKey()
       case '$numberLong':
-        return new mongo.Long(val)
+        if (typeof val === 'string') {
+          return mongo.Long.fromString(val)
+        } else {
+          return mongo.Long.fromNumber(val)
+        }
     }
     if (typeof val === 'object') {
       obj[key] = module.exports(val)
